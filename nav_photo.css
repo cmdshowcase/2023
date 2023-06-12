@@ -1,0 +1,46 @@
+.header-area {
+  display: flex;
+  padding: 25px 0 0;
+  position: relative;
+
+  margin-bottom:50px;
+}
+
+.header-area .logo {
+  text-transform: uppercase;
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 19px;
+  width: 300px;
+  color: #5d5d5d;
+}
+
+.header-area .links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: right;
+}
+
+.header-area .links li {
+  display: inline-block;
+  margin-left: 30px;
+  color: #5d5d5d;
+  cursor: pointer;
+}
+.header-area .links li:last-child {
+  /*border: 0;
+  border-radius: 20px;
+  padding: 10px 18px;*/
+  color: #FFF;
+/*  background-color: black;*/
+}
+
+/* Add this to remove the underline */
+.header-area .links li a {
+  text-decoration: none;
+  color: #5d5d5d;
+}
+
+ 

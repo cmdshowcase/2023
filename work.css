@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    ". . . . . ."
+    ". one one two two ."
+    ". one one two two ."
+    ". one one two two ."
+    ". one one two two ."
+    ". . . . . .";
+  font-family: 'Roboto', sans-serif;
+
+}
+
+p{
+    text-align: left;
+ color:rgba(0, 0, 0, 0.75);
+}
+
+.one.one {
+  background: url("caseOne_thumb.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: one;
+/*  border-radius: .75rem 0 0 .75rem;*/
+}
+
+.one.two {
+  background: url("case2Three_hero.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: one;
+/*  border-radius: .75rem 0 0 .75rem;*/
+}
+
+.two {
+  background-color: #fff;
+  grid-area: two;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  text-align: center;
+/*  border-radius: 0 .75rem .75rem 0;*/
+}
+
+.two h1 {
+  margin: 0 0 2rem 0;
+}
+
+
+
+.info{
+    border: 0;
+    border-radius: 20px;
+    padding: 12px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #FFF;
+    background-color: black;
+}
+
+
+
+@media screen and (max-width: 850px) {
+  .container {
+    height: 100vh;
+ background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+      ". . . . ."
+      ". . . . ."
+      ". one one one ."
+      ". one one one ."
+      ". one one one ."
+      ". one one one ."
+      ". one one one ."
+      ". one one one ."
+      ". one one one ."
+      ". one one one ."
+      ". two two two ."
+      ". two two two ."
+      ". two two two ."
+      ". two two two ."
+      ". . . . ."
+      ". . . . .";
+    padding: 1rem;
+  }
+
+  .one {
+  /*  border-radius: .75rem .75rem 0 0;*/;
+    min-width: 200px;
+  }
+
+  .two {
+  /*  border-radius: 0 0 .75rem .75rem;*/
+    min-width: 200px;
+  }
+
+}
